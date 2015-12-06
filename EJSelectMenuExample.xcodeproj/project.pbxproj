@@ -15,6 +15,7 @@
 		B2F3ED5F1C14F1E8003A41F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3ED5D1C14F1E8003A41F9 /* LaunchScreen.storyboard */; };
 		B2F3ED6A1C14F1E8003A41F9 /* EJSelectMenuExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED691C14F1E8003A41F9 /* EJSelectMenuExampleTests.m */; };
 		B2F3ED751C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED741C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m */; };
+		B2F3ED841C14F396003A41F9 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED831C14F396003A41F9 /* MenuItem.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B2F3ED701C14F1E8003A41F9 /* EJSelectMenuExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EJSelectMenuExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F3ED741C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJSelectMenuExampleUITests.m; sourceTree = "<group>"; };
 		B2F3ED761C14F1E8003A41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F3ED821C14F396003A41F9 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		B2F3ED831C14F396003A41F9 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				B2F3ED5D1C14F1E8003A41F9 /* LaunchScreen.storyboard */,
 				B2F3ED601C14F1E8003A41F9 /* Info.plist */,
 				B2F3ED4F1C14F1E8003A41F9 /* Supporting Files */,
+				B2F3ED821C14F396003A41F9 /* MenuItem.h */,
+				B2F3ED831C14F396003A41F9 /* MenuItem.m */,
 			);
 			path = EJSelectMenuExample;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F3ED571C14F1E8003A41F9 /* ViewController.m in Sources */,
+				B2F3ED841C14F396003A41F9 /* MenuItem.m in Sources */,
 				B2F3ED541C14F1E8003A41F9 /* AppDelegate.m in Sources */,
 				B2F3ED511C14F1E8003A41F9 /* main.m in Sources */,
 			);
