@@ -11,7 +11,7 @@
 @implementation MenuItem{
     UIButton *button;
 }
-
+// TODO: take care of all initializers
 -(instancetype)init{
     return [self initWithFrame:CGRectZero];
 }
