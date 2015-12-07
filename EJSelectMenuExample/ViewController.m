@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MenuViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <EJMenuDelegate>
+
+@property (nonatomic,strong) MenuViewController *selectMenu;
 
 @end
 
@@ -16,12 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)popUp4ButtonPressed:(UIButton *)sender {
+    MenuViewController *menu = [[MenuViewController alloc]init];
+    menu.buttonNames = @[@"one",@"two",@"three",@"four"];
+    menu.delegate = self;
+    
+    [self presentViewController:menu animated:NO completion:nil];
 }
+
+
+
 
 @end
