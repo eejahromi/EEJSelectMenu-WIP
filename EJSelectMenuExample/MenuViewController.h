@@ -9,14 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "MenuItem.h"
 
-typedef NS_ENUM(NSUInteger,AnimationStyle){
+typedef NS_OPTIONS(NSUInteger,AnimationStyle){
     AnimationStyleFadeIn = (1 << 0),
     AnimationStyleWiden = (1 << 1),
     AnimationStyleScale,
     AnimationStyleMoveInFromLeft,
     AnimationStyleMoveInFromRight,
-    AnimationStyleAlternate,
-    AnimationStyleReverse
+    AnimationStyleAlternate
 };
 
 @protocol EJMenuDelegate <NSObject>
@@ -29,7 +28,6 @@ typedef NS_ENUM(NSUInteger,AnimationStyle){
 
 @interface MenuViewController : UIViewController
 
-@property (nonatomic,strong) UIColor *menuItemColor;
 @property (nonatomic,strong) UIColor *menuBackgroundColor;
 @property (nonatomic,strong) UIColor *selectedButtonColor;
 @property (nonatomic,assign) long numberOfButtons;

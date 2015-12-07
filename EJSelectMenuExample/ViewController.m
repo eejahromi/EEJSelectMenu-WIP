@@ -27,6 +27,7 @@
     MenuViewController *menu = [[MenuViewController alloc]init];
     menu.buttonNames = @[@"one",@"two",@"three",@"four"];
     menu.delegate = self;
+    menu.animationStyle = AnimationStyleFadeIn;
     
     [self presentViewController:menu animated:NO completion:nil];
 }
