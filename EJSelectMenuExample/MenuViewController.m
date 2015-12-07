@@ -55,33 +55,16 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
+    switch (self.animationStyle) {
+        case AnimationStyleFadeIn:
+            break;
+        case AnimationStyleWiden:
+            break;
+            
+        default:
+            break;
+    }
     
-//    switch (self.animationStyle) {
-//        case AnimationStyleFade:
-//            [self expandAnimation];
-//            break;
-//        case AnimationStyleWiden:
-//            [self expandAnimation];
-//            break;
-//            
-//        default:
-//            break;
-//    }
-    
-    
-    //    float delay = 0.0;
-    //    for (MenuItem *menu in self.buttons) {
-    //
-    //        [self performSelector:@selector(showButton:) withObject:menu afterDelay:delay];
-    //        delay += 0.15;
-    //    }
-    
-    //    __block float delay = 0.0;
-    //    [self.buttons enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    //        MenuItem *menu = (MenuItem *)obj;
-    //        [self performSelector:@selector(showButton:) withObject:menu afterDelay:delay];
-    //        delay += 0.1;
-    //    }];
     
     [self expandAnimation];
 }
@@ -210,22 +193,6 @@
     }
     
 }
-
-
-//-(void)buttonPressed:(UIButton *)button{
-//    //NSLog(@"Button %@",button.titleLabel.text);
-//    if (self.delegate) {
-//        if ([self.delegate respondsToSelector:@selector(buttonWasPressedWithTitle:)]) {
-//            [self.delegate buttonWasPressedWithTitle:button.titleLabel.text];
-//        }
-//
-//        if ([self.delegate respondsToSelector:@selector(buttonWasPressedWithTag:)]) {
-//            [self.delegate buttonWasPressedWithTag:button.tag];
-//        }
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//
-//    }
-//}
 
 
 -(BOOL)shouldAutorotate{

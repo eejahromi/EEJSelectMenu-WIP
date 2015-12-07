@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "MenuItem.h"
 
+typedef NS_ENUM(NSUInteger,AnimationStyle){
+    AnimationStyleFadeIn = (1 << 0),
+    AnimationStyleWiden = (1 << 1),
+    AnimationStyleScale,
+    AnimationStyleMoveInFromLeft,
+    AnimationStyleMoveInFromRight,
+    AnimationStyleAlternate,
+    AnimationStyleReverse
+};
+
 @protocol EJMenuDelegate <NSObject>
 
 @optional
@@ -25,7 +35,7 @@
 @property (nonatomic,assign) long numberOfButtons;
 @property (nonatomic,strong) NSArray *buttonNames;
 
-//@property (nonatomic) enum AnimationStyle animationStyle;
+@property (nonatomic) enum AnimationStyle animationStyle;
 
 @property (nonatomic,assign) id<EJMenuDelegate> delegate;
 
