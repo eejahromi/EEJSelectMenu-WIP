@@ -19,6 +19,8 @@
     BOOL alternate;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
