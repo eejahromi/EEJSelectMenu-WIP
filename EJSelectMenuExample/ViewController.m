@@ -22,17 +22,16 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)popUp4ButtonPressed:(UIButton *)sender {
     MenuViewController *menu = [[MenuViewController alloc]init];
-    NSArray *butttonNames = @[@"one",@"two",@"three",@"four"];
-    menu.buttonNames = butttonNames;
+    menu.buttonNames = @[@"one",@"two",@"three",@"four"];
     menu.delegate = self;
     
     [self presentViewController:menu animated:NO completion:nil];
 }
+
+
+
+
 @end

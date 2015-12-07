@@ -27,7 +27,7 @@
 
 -(void)setupMenuItems{
     
-    [self setBackgroundColor:self.color];
+    [self setBackgroundColor:self.menuBackgroundColor];
     self.buttons = [NSMutableArray array];
     alternate = YES;
     self.numberOfButtons = self.buttonNames.count;
@@ -39,12 +39,10 @@
                      initWithFrame:CGRectMake(1, 20 + (i * heightBasedOnNumberOfButtons) + i, self.view.bounds.size.width - 2, heightBasedOnNumberOfButtons)];
         self.item.title = self.buttonNames[i];
         // TODO: create a property for this
-        self.item.backgroundColor = [UIColor orangeColor];
-        // TODO: test selectedStateColor
+        self.item.backgroundColor = self.menuItemColor ? self.menuItemColor : [UIColor colorWithRed:88/255.0 green:115/255.0 blue:160/255.0 alpha:1.0];
+        self.item.selectedStateColor = self.selectedButtonColor;
         self.item.tag = 100 + i;
         self.item.delegate = self;
-        // TODO: remove this line
-        self.item.alpha = 0.0;
         
         
         [self.buttons addObject:self.item];
@@ -171,20 +169,29 @@
 }
 
 -(void)setBackgroundColor:(UIColor *)color{
-    if (color) {
-        self.view.backgroundColor = color;
-    }else{
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
     
+    self.view.backgroundColor = color ? color : [UIColor whiteColor];
+}
+
+-(void)setMenuItemColor:(UIColor *)menuItemColor{
+    [self setItemColor:menuItemColor];
+}
+
+-(void)setItemColor:(UIColor *)color{
+    
+    self.item.backgroundColor = color ? color : [UIColor orangeColor];
 }
 
 -(void)itemWasPressedWithButton:(MenuItem *)button andTitle:(NSString *)title{
     [self selectedAnimation:button];
-    
+
     if (self.delegate) {
         if([self.delegate respondsToSelector:@selector(buttonWasPressedWithTitle:)]){
             [self.delegate buttonWasPressedWithTitle:title];
+        }
+        
+        if([self.delegate respondsToSelector:@selector(buttonWasPressedWithTag:)]){
+            [self.delegate buttonWasPressedWithTag:button.tag];
         }
     }
 }

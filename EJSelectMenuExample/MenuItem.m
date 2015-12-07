@@ -19,7 +19,6 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor grayColor];
         self.alpha = 0.0;
         [self setButtonTitle:self.title];
         button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
@@ -55,9 +54,7 @@
 }
 
 -(void)buttonPressed:(UIButton *)buttonItem{
-    //NSLog(@"In menu item: %@",buttonItem.titleLabel.text);
-    //[buttonItem setBackgroundColor:[UIColor purpleColor]];
-    
+
     buttonItem.backgroundColor = self.selectedStateColor ? self.selectedStateColor : [UIColor purpleColor];
     
     if (self.delegate) {
