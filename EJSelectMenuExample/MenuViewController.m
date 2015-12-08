@@ -19,6 +19,16 @@
     BOOL alternate;
 }
 
+-(instancetype)initWithButtons:(NSArray *)buttons animationStyle:(AnimationStyle)style andDelegate:(id<EJMenuDelegate>)delegate{
+    self = [super init];
+    if (self) {
+        self.buttonNames = buttons;
+        self.animationStyle = style;
+        self.delegate = delegate;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
