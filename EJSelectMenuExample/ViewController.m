@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "EJSelectMenu.h"
 
-// TODO: images on buttons
 @interface ViewController () <EJSelectMenuDelegate>
 
 @property (nonatomic,strong) EJSelectMenu *selectMenu;
