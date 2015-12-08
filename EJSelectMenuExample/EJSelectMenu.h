@@ -10,8 +10,8 @@
 #import "EJMenuItem.h"
 
 typedef NS_OPTIONS(NSUInteger,AnimationStyle){
-    EJAnimationStyleFadeIn = (1 << 0),
-    EJAnimationStyleWiden = (1 << 1),
+    EJAnimationStyleFadeIn = 0,
+    EJAnimationStyleWiden,
     EJAnimationStyleScale,
     EJAnimationStyleMoveInFromLeft,
     EJAnimationStyleMoveInFromRight,
@@ -32,7 +32,6 @@ typedef NS_OPTIONS(NSUInteger,AnimationStyle){
 
 @property (nonatomic,strong) UIColor *menuBackgroundColor;
 @property (nonatomic,strong) UIColor *selectedButtonColor;
-@property (nonatomic,assign) long numberOfButtons;
 @property (nonatomic,strong) NSArray *buttonNames;
 
 @property (nonatomic) enum AnimationStyle animationStyle;

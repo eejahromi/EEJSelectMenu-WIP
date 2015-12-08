@@ -25,7 +25,11 @@
 
 - (IBAction)popUp3Buttons:(UIButton *)sender {
     NSArray *buttonNames = @[@"ROCK",@"PAPER",@"SCISSORS",];
-    EJSelectMenu *pop = [[EJSelectMenu alloc]initWithButtons:buttonNames animationStyle:EJAnimationStyleFadeIn andDelegate:self];
+    //EJSelectMenu *pop = [[EJSelectMenu alloc]initWithButtons:buttonNames animationStyle:EJAnimationStyleFadeIn andDelegate:self];
+    EJSelectMenu *pop = [[EJSelectMenu alloc]init];
+    pop.delegate = self;
+    pop.buttonNames = buttonNames;
+    //pop.animationStyle = EJAnimationStyleMoveInFromLeft;
     [self presentViewController:pop animated:NO completion:nil];
 }
 
