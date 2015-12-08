@@ -8,20 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@class MenuItem;
+@class EJMenuItem;
 
-@protocol MenuItemDelegate <NSObject>
+@protocol EJMenuItemDelegate <NSObject>
 
 @optional
--(void)itemWasPressedWithButton:(MenuItem *)button andTitle:(NSString *)title;
--(void)itemWasPressedWithTag:(long)tag;
+-(void)EJMenuItemWasPressedWithButton:(EJMenuItem *)button andTitle:(NSString *)title;
+-(void)EJMenuItemWasPressedWithTag:(long)tag;
 
 @end
-@interface MenuItem : UIView
+@interface EJMenuItem : UIView
 
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) UIColor *selectedStateColor;
 
-@property (nonatomic,assign) id<MenuItemDelegate> delegate;
+@property (nonatomic,assign) id<EJMenuItemDelegate> delegate;
 
 @end

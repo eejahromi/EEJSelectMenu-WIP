@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MenuViewController.h"
-// TODO: name changes
-// TODO: images on buttons
-@interface ViewController () <EJMenuDelegate>
+#import "EJSelectMenu.h"
 
-@property (nonatomic,strong) MenuViewController *selectMenu;
+// TODO: images on buttons
+@interface ViewController () <EJSelectMenuDelegate>
+
+@property (nonatomic,strong) EJSelectMenu *selectMenu;
 
 @end
 
@@ -25,16 +25,11 @@
 
 
 - (IBAction)popUp4ButtonPressed:(UIButton *)sender {
-//    MenuViewController *menu = [[MenuViewController alloc]init];
-//    menu.buttonNames = @[@"one",@"two",@"three",@"four"];
-//    menu.delegate = self;
-//    menu.animationStyle = AnimationStyleFadeIn;
-    
-    NSArray *buttonNames = @[@"one",@"two",@"three"];
-    MenuViewController *pop = [[MenuViewController alloc]initWithButtons:buttonNames animationStyle:AnimationStyleAlternate andDelegate:self];
+
+    NSArray *buttonNames = @[@"one",@"two",@"three",@"four"];
+    EJSelectMenu *pop = [[EJSelectMenu alloc]initWithButtons:buttonNames animationStyle:EJAnimationStyleScale andDelegate:self];
     [self presentViewController:pop animated:NO completion:nil];
 }
-
 
 
 @end
