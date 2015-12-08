@@ -28,6 +28,8 @@ typedef NS_OPTIONS(NSUInteger,AnimationStyle){
 
 @interface MenuViewController : UIViewController
 
+-(instancetype)initWithButtons:(NSArray *)buttons animationStyle:(AnimationStyle)style andDelegate:(id<EJMenuDelegate>)delegate;
+
 @property (nonatomic,strong) UIColor *menuBackgroundColor;
 @property (nonatomic,strong) UIColor *selectedButtonColor;
 @property (nonatomic,assign) long numberOfButtons;
@@ -36,5 +38,7 @@ typedef NS_OPTIONS(NSUInteger,AnimationStyle){
 @property (nonatomic) enum AnimationStyle animationStyle;
 
 @property (nonatomic,assign) id<EJMenuDelegate> delegate;
+
+
 
 @end

@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "MenuViewController.h"
-
+// TODO: name changes
+// TODO: images on buttons
 @interface ViewController () <EJMenuDelegate>
 
 @property (nonatomic,strong) MenuViewController *selectMenu;
@@ -24,14 +25,15 @@
 
 
 - (IBAction)popUp4ButtonPressed:(UIButton *)sender {
-    MenuViewController *menu = [[MenuViewController alloc]init];
-    menu.buttonNames = @[@"one",@"two",@"three",@"four"];
-    menu.delegate = self;
-    menu.animationStyle = AnimationStyleFadeIn;
+//    MenuViewController *menu = [[MenuViewController alloc]init];
+//    menu.buttonNames = @[@"one",@"two",@"three",@"four"];
+//    menu.delegate = self;
+//    menu.animationStyle = AnimationStyleFadeIn;
     
-    [self presentViewController:menu animated:NO completion:nil];
+    NSArray *buttonNames = @[@"one",@"two",@"three"];
+    MenuViewController *pop = [[MenuViewController alloc]initWithButtons:buttonNames animationStyle:AnimationStyleAlternate andDelegate:self];
+    [self presentViewController:pop animated:NO completion:nil];
 }
-
 
 
 
