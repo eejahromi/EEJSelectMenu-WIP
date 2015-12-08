@@ -1,8 +1,8 @@
 //
-//  MenuViewController.h
+//  EJSelectMenu.h
 //  EJSelectMenuExample
 //
-//  Created by Ehsan on 12/6/15.
+//  Created by Ehsan Jahromi
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 

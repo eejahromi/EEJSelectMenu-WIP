@@ -1,5 +1,5 @@
 //
-//  MenuViewController.m
+//  EJSelectMenu.m
 //  EJSelectMenuExample
 //
 //  Created by Ehsan on 12/6/15.
