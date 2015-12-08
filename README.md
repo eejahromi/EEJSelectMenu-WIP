@@ -34,14 +34,15 @@ Add the header file to your source code
 
 Getting Started
 ==================
-Create an instance of EJImageLiker
+Create an instance of EJSelectMenu and provide button names
 ```objective-c
+    NSArray *buttonNames = @[@"ONE",@"TWO",@"THREE",@"FOUR"];
     EJSelectMenu *menu = [[EJSelectMenu alloc]initWithButtons:buttonNames 
                     animationStyle:EJAnimationStyleFadeIn andDelegate:self];
     [self presentViewController:menu animated:NO completion:nil];
 ```    
 OR
-```    
+```objective-c    
     EJSelectMenu *menu = [[EJSelectMenu alloc]init];
     menu.buttonNames = @[@"ONE",@"TWO",@"THREE",@"FOUR"];
     menu.animationStyle = EJAnimationStyleAlternate;
