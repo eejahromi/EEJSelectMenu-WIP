@@ -1,6 +1,6 @@
 # EJSelectMenu
 
-Beta testing. Coacoapod coming soon!
+Beta testing. CocoaPod coming soon!
 
 EJSelectMenu is a responsive single selection menu for iOS.  
 Project allows for implementing a menu with different number of buttons and different animations for appearance.  
@@ -21,7 +21,7 @@ Just provide the names for the buttons and the menu will take care of the number
 
 Installation
 ==================
-### Coacoapods
+### CocoaPods
 Coming Soon! 
 
 
