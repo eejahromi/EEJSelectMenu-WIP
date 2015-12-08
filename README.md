@@ -7,8 +7,15 @@ Project allows for implementing a menu with different number of buttons and diff
 It will adjust the button sizes based on the device screen size!   
 Just provide the names for the buttons and the menu will take care of the number and layout of the buttons!
 
-![](demo.gif)
+### Demo
+###### Animation: FadeIn & Widen 
+![](firstTwo.gif)
 
+###### Animation: Scale & MoveInFromLeft 
+![](secondTwo.gif)
+
+###### Animation: MoveInFromRight & Alternate 
+![](lastTwo.gif)
 
 ##### Version 0.10.0
 
