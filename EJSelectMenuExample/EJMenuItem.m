@@ -6,9 +6,9 @@
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 
-#import "MenuItem.h"
+#import "EJMenuItem.h"
 
-@implementation MenuItem{
+@implementation EJMenuItem{
     UIButton *button;
 }
 
@@ -73,8 +73,8 @@
     buttonItem.backgroundColor = self.selectedStateColor ? self.selectedStateColor : [UIColor purpleColor];
     
     if (self.delegate) {
-        if ([self.delegate respondsToSelector:@selector(itemWasPressedWithButton:andTitle:)]) {
-            [self.delegate itemWasPressedWithButton:self andTitle:buttonItem.titleLabel.text];
+        if ([self.delegate respondsToSelector:@selector(EJMenuItemWasPressedWithButton:andTitle:)]) {
+            [self.delegate EJMenuItemWasPressedWithButton:self andTitle:buttonItem.titleLabel.text];
         }
         
 

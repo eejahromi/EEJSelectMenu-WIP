@@ -6,20 +6,20 @@
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "EJSelectMenu.h"
 
-@interface MenuViewController () <MenuItemDelegate>
-@property (strong,nonatomic) MenuItem *item;
+@interface EJSelectMenu () <EJMenuItemDelegate>
+@property (strong,nonatomic) EJMenuItem *item;
 @property (strong,nonatomic) NSMutableArray *buttons;
 
 @end
 
-@implementation MenuViewController{
+@implementation EJSelectMenu{
     BOOL even;
     BOOL alternate;
 }
 
--(instancetype)initWithButtons:(NSArray *)buttons animationStyle:(AnimationStyle)style andDelegate:(id<EJMenuDelegate>)delegate{
+-(instancetype)initWithButtons:(NSArray *)buttons animationStyle:(AnimationStyle)style andDelegate:(id<EJSelectMenuDelegate>)delegate{
     self = [super init];
     if (self) {
         self.buttonNames = buttons;
@@ -45,7 +45,7 @@
     CGFloat heightBasedOnNumberOfButtons = ((self.view.bounds.size.height - 20) / self.numberOfButtons) - 1.0;
     
     for (int i=0; i<self.numberOfButtons; i++) {
-        self.item = [[MenuItem alloc]
+        self.item = [[EJMenuItem alloc]
                      initWithFrame:CGRectMake(1, 20 + (i * heightBasedOnNumberOfButtons) + i, self.view.bounds.size.width - 2, heightBasedOnNumberOfButtons)];
         self.item.title = self.buttonNames[i];
 
@@ -70,54 +70,54 @@
     
     switch (self.animationStyle) {
     
-        case AnimationStyleFadeIn:{
+        case EJAnimationStyleFadeIn:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(fadeInAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
         }
             
             break;
-        case AnimationStyleWiden:{
+        case EJAnimationStyleWiden:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(widenAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
         }
             break;
         
-        case AnimationStyleScale:{
+        case EJAnimationStyleScale:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(scaleAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
         }
             break;
             
-        case AnimationStyleMoveInFromLeft:{
+        case EJAnimationStyleMoveInFromLeft:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(moveInFromLeftAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
         }
             break;
             
-        case AnimationStyleMoveInFromRight:{
+        case EJAnimationStyleMoveInFromRight:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(moveInFromRightAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
         }
             break;
             
-        case AnimationStyleAlternate:{
+        case EJAnimationStyleAlternate:{
             [self.buttons enumerateObjectsWithOptions:enumOption usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                MenuItem *menu = (MenuItem *)obj;
+                EJMenuItem *menu = (EJMenuItem *)obj;
                 [self performSelector:@selector(alternateAnimation:) withObject:menu afterDelay:delay];
                 delay += 0.1;
             }];
@@ -132,13 +132,13 @@
 
 #pragma mark - Animations
 
--(void)fadeInAnimation:(MenuItem *)item{
+-(void)fadeInAnimation:(EJMenuItem *)item{
     [UIView animateWithDuration:0.3 animations:^{
         item.alpha = 1.0;
     }];
 }
 
--(void)widenAnimation:(MenuItem *)item{
+-(void)widenAnimation:(EJMenuItem *)item{
     // Grow from middle animation
     item.transform = CGAffineTransformMakeScale(0.0, 0.0);
     [UIView animateWithDuration:0.3 animations:^{
@@ -147,7 +147,7 @@
     }];
 }
 
--(void)scaleAnimation:(MenuItem *)item{
+-(void)scaleAnimation:(EJMenuItem *)item{
     // zoom out from middle animation
     item.transform = CGAffineTransformMakeScale(5.0, 5.0);
     [UIView animateWithDuration:0.3 animations:^{
@@ -156,7 +156,7 @@
     }];
 }
 
--(void)moveInFromLeftAnimation:(MenuItem *)item{
+-(void)moveInFromLeftAnimation:(EJMenuItem *)item{
     // animate in from sides
     item.frame = CGRectMake(-self.view.bounds.size.width, item.frame.origin.y, item.frame.size.width, item.frame.size.height);
     [UIView animateWithDuration:0.3 animations:^{
@@ -165,7 +165,7 @@
     }];
 }
 
--(void)moveInFromRightAnimation:(MenuItem *)item{
+-(void)moveInFromRightAnimation:(EJMenuItem *)item{
     // animate in from sides
     item.frame = CGRectMake(self.view.bounds.size.width, item.frame.origin.y, item.frame.size.width, item.frame.size.height);
     [UIView animateWithDuration:0.3 animations:^{
@@ -174,7 +174,7 @@
     }];
 }
 
--(void)alternateAnimation:(MenuItem *)item{
+-(void)alternateAnimation:(EJMenuItem *)item{
     CGFloat xPosition;
     if (even) {
         even = !even;
@@ -214,23 +214,23 @@
 
 #pragma mark - item delegation and animation
 
--(void)itemWasPressedWithButton:(MenuItem *)button andTitle:(NSString *)title{
+-(void)EJMenuItemWasPressedWithButton:(EJMenuItem *)button andTitle:(NSString *)title{
     [self selectedAnimation:button];
-
+    
     if (self.delegate) {
-        if([self.delegate respondsToSelector:@selector(buttonWasPressedWithTitle:)]){
-            [self.delegate buttonWasPressedWithTitle:title];
+        if([self.delegate respondsToSelector:@selector(EJSelectMenuButtonWasPressedWithTitle:)]){
+            [self.delegate EJSelectMenuButtonWasPressedWithTitle:title];
         }
         
-        if([self.delegate respondsToSelector:@selector(buttonWasPressedWithTag:)]){
-            [self.delegate buttonWasPressedWithTag:button.tag];
+        if([self.delegate respondsToSelector:@selector(EJSelectMenuButtonWasPressedWithTag:)]){
+            [self.delegate EJSelectMenuButtonWasPressedWithTag:button.tag];
         }
     }
 }
 
--(void)selectedAnimation:(MenuItem *)button{
+-(void)selectedAnimation:(EJMenuItem *)button{
     
-    for (MenuItem *btn in self.buttons) {
+    for (EJMenuItem *btn in self.buttons) {
         if (btn.tag == button.tag){
             continue;
         }
