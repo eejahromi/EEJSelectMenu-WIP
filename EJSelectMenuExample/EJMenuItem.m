@@ -1,17 +1,17 @@
 //
-//  MenuItem.m
+//  EJMenuItem.m
 //  EJSelectMenuExample
 //
-//  Created by Ehsan on 12/6/15.
+//  Created by Ehsan Jahromi
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 
-#import "MenuItem.h"
+#import "EJMenuItem.h"
 
-@implementation MenuItem{
+@implementation EJMenuItem{
     UIButton *button;
 }
-// TODO: take care of all initializers
+
 -(instancetype)init{
     return [self initWithFrame:CGRectZero];
 }
@@ -19,17 +19,32 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.alpha = 0.0;
-        [self setButtonTitle:self.title];
-        button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-
-        self.userInteractionEnabled = YES;
-        [self addSubview:button];
+        
+        [self defaultInit:frame];
     }
     
     return self;
 }
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        
+        [self defaultInit:CGRectZero];
+    }
+    return self;
+}
+
+-(void)defaultInit:(CGRect)frame{
+    self.alpha = 0.0;
+    [self setButtonTitle:self.title];
+    button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.userInteractionEnabled = YES;
+    [self addSubview:button];
+}
+
 
 -(void)setTitle:(NSString *)title{
     [self setButtonTitle:title];
@@ -58,8 +73,8 @@
     buttonItem.backgroundColor = self.selectedStateColor ? self.selectedStateColor : [UIColor purpleColor];
     
     if (self.delegate) {
-        if ([self.delegate respondsToSelector:@selector(itemWasPressedWithButton:andTitle:)]) {
-            [self.delegate itemWasPressedWithButton:self andTitle:buttonItem.titleLabel.text];
+        if ([self.delegate respondsToSelector:@selector(EJMenuItemWasPressedWithButton:andTitle:)]) {
+            [self.delegate EJMenuItemWasPressedWithButton:self andTitle:buttonItem.titleLabel.text];
         }
         
 
