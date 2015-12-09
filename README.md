@@ -17,7 +17,7 @@ Just provide the names for the buttons and the menu will take care of the number
 ###### Animation: MoveInFromRight & Alternate 
 ![](lastTwo.gif)
 
-##### Version 0.10.0
+##### Version 0.10.1
 
 Installation
 ==================
@@ -50,6 +50,7 @@ OR
     
     [self presentViewController:menu animated:NO completion:nil];
 ```
+###### Note: for smoother animation set the animated property to "NO" when presenting the menu as shown above.
 
 #### AnimationStyle
 ```objective-c
