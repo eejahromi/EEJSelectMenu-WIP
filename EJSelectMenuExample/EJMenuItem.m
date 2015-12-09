@@ -40,7 +40,11 @@
     [self setButtonTitle:self.title];
     button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    
+
+    if (self.backgroundImage) {
+        [self setBackgroundImage:self.backgroundImage];
+    }
+
     self.userInteractionEnabled = YES;
     [self addSubview:button];
 }
@@ -58,6 +62,15 @@
         [button setTitle:@"Button" forState:UIControlStateNormal];
     }
     
+}
+
+-(void)setBackgroundImage:(UIImage *)image{
+    if (image) {
+        [button setBackgroundImage:image forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor blackColor]];
+    } else {
+        [button setBackgroundImage:image forState:UIControlStateNormal];
+    }
 }
 
 -(void)expandAnimation{

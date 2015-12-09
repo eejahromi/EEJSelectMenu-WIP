@@ -33,6 +33,16 @@
     [self presentViewController:pop animated:NO completion:nil];
 }
 
+- (IBAction)popUp3ButtonsWithImages:(UIButton *)sender {
+    NSArray *buttonNames = @[@"MERCURY",@"VENUS",@"MARS"];
+    NSArray *buttonImages = @[[UIImage imageNamed:@"mercury"],
+                              [UIImage imageNamed:@"venus"],
+                              [UIImage imageNamed:@"mars"]];
+    EJSelectMenu *pop = [[EJSelectMenu alloc]initWithButtons:buttonNames animationStyle:EJAnimationStyleWiden andDelegate:self];
+    pop.buttonImages = buttonImages;
+    [self presentViewController:pop animated:NO completion:nil];
+}
+
 - (IBAction)popUp4ButtonPressed:(UIButton *)sender {
     NSArray *buttonNames = @[@"COFFEE",@"DECAF",@"TEA",@"WATER"];
     EJSelectMenu *pop = [[EJSelectMenu alloc]initWithButtons:buttonNames animationStyle:EJAnimationStyleWiden andDelegate:self];

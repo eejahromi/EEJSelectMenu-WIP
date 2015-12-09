@@ -20,6 +20,7 @@
 @interface EJMenuItem : UIView
 
 @property (nonatomic,strong) NSString *title;
+@property (nonatomic,strong) UIImage *backgroundImage;
 @property (nonatomic,strong) UIColor *selectedStateColor;
 
 @property (nonatomic,assign) id<EJMenuItemDelegate> delegate;
