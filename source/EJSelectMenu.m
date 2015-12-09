@@ -10,7 +10,7 @@
 @interface EJSelectMenu () <EJMenuItemDelegate>
 @property (strong,nonatomic) EJMenuItem *item;
 @property (strong,nonatomic) NSMutableArray *buttons;
-
+@property (assign,nonatomic) long numberOfButtons;
 @end
 
 @implementation EJSelectMenu{
