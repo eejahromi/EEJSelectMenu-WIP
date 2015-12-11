@@ -25,8 +25,10 @@ Installation
 Coming Soon! 
 
 
-### Files
-Add the header file to your source code
+### Using Source Files
+Add the files in the source folder to your project
+
+Import the header file to your source code
 ```objective-c
 #import "EJSelectMenu.h"
 ```
