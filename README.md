@@ -85,5 +85,5 @@ Change menu background color (default -> White)
     menu.menuBackgroundColor = [UIColor redColor];
 ```
 
-#### Other configurations:
+#### License:
 EJSelectMenu is released under the MIT license. See LICENSE for details.
