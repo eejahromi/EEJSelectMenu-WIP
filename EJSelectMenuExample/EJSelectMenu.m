@@ -48,7 +48,7 @@
         self.item = [[EJMenuItem alloc]
                      initWithFrame:CGRectMake(1, 20 + (i * heightBasedOnNumberOfButtons) + i, self.view.bounds.size.width - 2, heightBasedOnNumberOfButtons)];
         self.item.title = self.buttonNames[i];
-
+        self.item.backgroundImage = self.buttonImages[i] ? self.buttonImages[i] : [UIImage imageNamed:@"default"];
         self.item.backgroundColor = [UIColor colorWithRed:88/255.0 green:115/255.0 blue:160/255.0 alpha:1.0];
         self.item.selectedStateColor = self.selectedButtonColor;
         self.item.tag = 100 + i;

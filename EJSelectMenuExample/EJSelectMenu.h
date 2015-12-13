@@ -33,6 +33,7 @@ typedef NS_OPTIONS(NSUInteger,AnimationStyle){
 @property (nonatomic,strong) UIColor *menuBackgroundColor;
 @property (nonatomic,strong) UIColor *selectedButtonColor;
 @property (nonatomic,strong) NSArray *buttonNames;
+@property (nonatomic,strong) NSArray *buttonImages;
 
 @property (nonatomic) enum AnimationStyle animationStyle;
 
