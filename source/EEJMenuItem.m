@@ -1,17 +1,18 @@
 //
-//  EJMenuItem.m
+//  EEJMenuItem.m
+//  EEJSelectMenuExample
 //
 //  Created by Ehsan Jahromi
-//  Copyright © 2015 Ehsan Jahromi. Released under an MIT license.
+//  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 
-#import "EJMenuItem.h"
+#import "EEJMenuItem.h"
 
-@implementation EJMenuItem{
+@implementation EEJMenuItem {
     UIButton *button;
 }
 
--(instancetype)init{
+- (instancetype)init {
     return [self initWithFrame:CGRectZero];
 }
 
@@ -25,7 +26,7 @@
     return self;
 }
 
--(instancetype)initWithCoder:(NSCoder *)aDecoder{
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         
@@ -34,7 +35,7 @@
     return self;
 }
 
--(void)defaultInit:(CGRect)frame{
+- (void)defaultInit:(CGRect)frame {
     self.alpha = 0.0;
     [self setButtonTitle:self.title];
     button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
@@ -45,12 +46,12 @@
 }
 
 
--(void)setTitle:(NSString *)title{
+- (void)setTitle:(NSString *)title {
     [self setButtonTitle:title];
 }
 
 
--(void)setButtonTitle:(NSString *)title{
+- (void)setButtonTitle:(NSString *)title {
     if (title) {
         [button setTitle:title forState:UIControlStateNormal];
     }else{
@@ -59,15 +60,7 @@
     
 }
 
--(void)expandAnimation{
-    [UIView animateWithDuration:0.7 delay:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        
-    }];
-}
-
--(void)buttonPressed:(UIButton *)buttonItem{
+- (void)buttonPressed:(UIButton *)buttonItem {
 
     buttonItem.backgroundColor = self.selectedStateColor ? self.selectedStateColor : [UIColor purpleColor];
     
