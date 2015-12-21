@@ -1,6 +1,6 @@
 //
-//  EJMenuItem.h
-//  EJSelectMenuExample
+//  EEJMenuItem.h
+//  EEJSelectMenuExample
 //
 //  Created by Ehsan Jahromi
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class EJMenuItem;
+@class EEJMenuItem;
 
 @protocol EJMenuItemDelegate <NSObject>
 
 @optional
--(void)EJMenuItemWasPressedWithButton:(EJMenuItem *)button andTitle:(NSString *)title;
--(void)EJMenuItemWasPressedWithTag:(long)tag;
+- (void)EJMenuItemWasPressedWithButton:(EEJMenuItem *)button andTitle:(NSString *)title;
+- (void)EJMenuItemWasPressedWithTag:(long)tag;
 
 @end
-@interface EJMenuItem : UIView
+@interface EEJMenuItem : UIView
 
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) UIColor *selectedStateColor;

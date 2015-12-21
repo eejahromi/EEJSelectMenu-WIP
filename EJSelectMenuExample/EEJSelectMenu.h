@@ -1,15 +1,15 @@
 //
-//  EJSelectMenu.h
-//  EJSelectMenuExample
+//  EEJSelectMenu.h
+//  EEJSelectMenuExample
 //
 //  Created by Ehsan Jahromi
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "EJMenuItem.h"
+#import "EEJMenuItem.h"
 
-typedef NS_OPTIONS(NSUInteger,AnimationStyle){
+typedef NS_OPTIONS(NSUInteger,AnimationStyle) {
     EJAnimationStyleFadeIn = 0,
     EJAnimationStyleWiden,
     EJAnimationStyleScale,
@@ -26,7 +26,7 @@ typedef NS_OPTIONS(NSUInteger,AnimationStyle){
 
 @end
 
-@interface EJSelectMenu : UIViewController
+@interface EEJSelectMenu : UIViewController
 
 -(instancetype)initWithButtons:(NSArray *)buttons animationStyle:(AnimationStyle)style andDelegate:(id<EJSelectMenuDelegate>)delegate;
 
