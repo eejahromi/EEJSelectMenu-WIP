@@ -25,14 +25,14 @@
 			containerPortal = B2F3ED441C14F1E8003A41F9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2F3ED4B1C14F1E8003A41F9;
-			remoteInfo = EJSelectMenuExample;
+			remoteInfo = EEJSelectMenuExample;
 		};
 		B2F3ED711C14F1E8003A41F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2F3ED441C14F1E8003A41F9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2F3ED4B1C14F1E8003A41F9;
-			remoteInfo = EJSelectMenuExample;
+			remoteInfo = EEJSelectMenuExample;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,7 +87,7 @@
 		B2F3ED431C14F1E8003A41F9 = {
 			isa = PBXGroup;
 			children = (
-				B2F3ED4E1C14F1E8003A41F9 /* EJSelectMenuExample */,
+				B2F3ED4E1C14F1E8003A41F9 /* EEJSelectMenuExample */,
 				B2F3ED681C14F1E8003A41F9 /* EEJSelectMenuExampleTests */,
 				B2F3ED731C14F1E8003A41F9 /* EEJSelectMenuExampleUITests */,
 				B2F3ED4D1C14F1E8003A41F9 /* Products */,
@@ -104,7 +104,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2F3ED4E1C14F1E8003A41F9 /* EJSelectMenuExample */ = {
+		B2F3ED4E1C14F1E8003A41F9 /* EEJSelectMenuExample */ = {
 			isa = PBXGroup;
 			children = (
 				B2F3ED521C14F1E8003A41F9 /* AppDelegate.h */,
@@ -121,7 +121,8 @@
 				B2F3ED851C14F7E2003A41F9 /* EEJSelectMenu.h */,
 				B2F3ED861C14F7E2003A41F9 /* EEJSelectMenu.m */,
 			);
-			path = EJSelectMenuExample;
+			name = EEJSelectMenuExample;
+			path = EEJSelectMenuExample;
 			sourceTree = "<group>";
 		};
 		B2F3ED4F1C14F1E8003A41F9 /* Supporting Files */ = {
@@ -149,7 +150,7 @@
 				B2F3ED761C14F1E8003A41F9 /* Info.plist */,
 			);
 			name = EEJSelectMenuExampleUITests;
-			path = EJSelectMenuExampleUITests;
+			path = EEJSelectMenuExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +169,7 @@
 			dependencies = (
 			);
 			name = EEJSelectMenuExample;
-			productName = EJSelectMenuExample;
+			productName = EEJSelectMenuExample;
 			productReference = B2F3ED4C1C14F1E8003A41F9 /* EEJSelectMenuExample.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -186,7 +187,7 @@
 				B2F3ED671C14F1E8003A41F9 /* PBXTargetDependency */,
 			);
 			name = EEJSelectMenuExampleTests;
-			productName = EJSelectMenuExampleTests;
+			productName = EEJSelectMenuExampleTests;
 			productReference = B2F3ED651C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -204,7 +205,7 @@
 				B2F3ED721C14F1E8003A41F9 /* PBXTargetDependency */,
 			);
 			name = EEJSelectMenuExampleUITests;
-			productName = EJSelectMenuExampleUITests;
+			productName = EEJSelectMenuExampleUITests;
 			productReference = B2F3ED701C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -424,11 +425,10 @@
 		B2F3ED7A1C14F1E8003A41F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EJSelectMenuExample/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExample;
 				PRODUCT_NAME = EEJSelectMenuExample;
 			};
 			name = Debug;
@@ -436,11 +436,10 @@
 		B2F3ED7B1C14F1E8003A41F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EJSelectMenuExample/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExample;
 				PRODUCT_NAME = EEJSelectMenuExample;
 			};
 			name = Release;
@@ -449,9 +448,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EJSelectMenuExampleTests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleTests;
 				PRODUCT_NAME = EEJSelectMenuExample;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEJSelectMenuExample.app/EEJSelectMenuExample";
 			};
@@ -461,9 +460,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EJSelectMenuExampleTests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleTests;
 				PRODUCT_NAME = EEJSelectMenuExample;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEJSelectMenuExample.app/EEJSelectMenuExample";
 			};
@@ -472,11 +471,11 @@
 		B2F3ED801C14F1E8003A41F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EJSelectMenuExampleUITests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleUITests;
 				PRODUCT_NAME = EEJSelectMenuExample;
-				TEST_TARGET_NAME = EJSelectMenuExample;
+				TEST_TARGET_NAME = EEJSelectMenuExample;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -484,11 +483,11 @@
 		B2F3ED811C14F1E8003A41F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EJSelectMenuExampleUITests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleUITests;
 				PRODUCT_NAME = EEJSelectMenuExample;
-				TEST_TARGET_NAME = EJSelectMenuExample;
+				TEST_TARGET_NAME = EEJSelectMenuExample;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
