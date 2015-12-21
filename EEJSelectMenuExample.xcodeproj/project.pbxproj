@@ -13,10 +13,10 @@
 		B2F3ED5A1C14F1E8003A41F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3ED581C14F1E8003A41F9 /* Main.storyboard */; };
 		B2F3ED5C1C14F1E8003A41F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F3ED5B1C14F1E8003A41F9 /* Assets.xcassets */; };
 		B2F3ED5F1C14F1E8003A41F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3ED5D1C14F1E8003A41F9 /* LaunchScreen.storyboard */; };
-		B2F3ED6A1C14F1E8003A41F9 /* EJSelectMenuExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED691C14F1E8003A41F9 /* EJSelectMenuExampleTests.m */; };
-		B2F3ED751C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED741C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m */; };
-		B2F3ED841C14F396003A41F9 /* EJMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED831C14F396003A41F9 /* EJMenuItem.m */; settings = {ASSET_TAGS = (); }; };
-		B2F3ED871C14F7E2003A41F9 /* EJSelectMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED861C14F7E2003A41F9 /* EJSelectMenu.m */; settings = {ASSET_TAGS = (); }; };
+		B2F3ED6A1C14F1E8003A41F9 /* EEJSelectMenuExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED691C14F1E8003A41F9 /* EEJSelectMenuExampleTests.m */; };
+		B2F3ED751C14F1E8003A41F9 /* EEJSelectMenuExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED741C14F1E8003A41F9 /* EEJSelectMenuExampleUITests.m */; };
+		B2F3ED841C14F396003A41F9 /* EEJMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED831C14F396003A41F9 /* EEJMenuItem.m */; settings = {ASSET_TAGS = (); }; };
+		B2F3ED871C14F7E2003A41F9 /* EEJSelectMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F3ED861C14F7E2003A41F9 /* EEJSelectMenu.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,19 +25,19 @@
 			containerPortal = B2F3ED441C14F1E8003A41F9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2F3ED4B1C14F1E8003A41F9;
-			remoteInfo = EJSelectMenuExample;
+			remoteInfo = EEJSelectMenuExample;
 		};
 		B2F3ED711C14F1E8003A41F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2F3ED441C14F1E8003A41F9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2F3ED4B1C14F1E8003A41F9;
-			remoteInfo = EJSelectMenuExample;
+			remoteInfo = EEJSelectMenuExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B2F3ED4C1C14F1E8003A41F9 /* EJSelectMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EJSelectMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F3ED4C1C14F1E8003A41F9 /* EEJSelectMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEJSelectMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F3ED501C14F1E8003A41F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2F3ED521C14F1E8003A41F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2F3ED531C14F1E8003A41F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,16 +47,16 @@
 		B2F3ED5B1C14F1E8003A41F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F3ED5E1C14F1E8003A41F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F3ED601C14F1E8003A41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F3ED651C14F1E8003A41F9 /* EJSelectMenuExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EJSelectMenuExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F3ED691C14F1E8003A41F9 /* EJSelectMenuExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJSelectMenuExampleTests.m; sourceTree = "<group>"; };
+		B2F3ED651C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEJSelectMenuExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F3ED691C14F1E8003A41F9 /* EEJSelectMenuExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEJSelectMenuExampleTests.m; sourceTree = "<group>"; };
 		B2F3ED6B1C14F1E8003A41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F3ED701C14F1E8003A41F9 /* EJSelectMenuExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EJSelectMenuExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F3ED741C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJSelectMenuExampleUITests.m; sourceTree = "<group>"; };
+		B2F3ED701C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEJSelectMenuExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F3ED741C14F1E8003A41F9 /* EEJSelectMenuExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEJSelectMenuExampleUITests.m; sourceTree = "<group>"; };
 		B2F3ED761C14F1E8003A41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F3ED821C14F396003A41F9 /* EJMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJMenuItem.h; sourceTree = "<group>"; };
-		B2F3ED831C14F396003A41F9 /* EJMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJMenuItem.m; sourceTree = "<group>"; };
-		B2F3ED851C14F7E2003A41F9 /* EJSelectMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSelectMenu.h; sourceTree = "<group>"; };
-		B2F3ED861C14F7E2003A41F9 /* EJSelectMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSelectMenu.m; sourceTree = "<group>"; };
+		B2F3ED821C14F396003A41F9 /* EEJMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEJMenuItem.h; sourceTree = "<group>"; };
+		B2F3ED831C14F396003A41F9 /* EEJMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEJMenuItem.m; sourceTree = "<group>"; };
+		B2F3ED851C14F7E2003A41F9 /* EEJSelectMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEJSelectMenu.h; sourceTree = "<group>"; };
+		B2F3ED861C14F7E2003A41F9 /* EEJSelectMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEJSelectMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +87,9 @@
 		B2F3ED431C14F1E8003A41F9 = {
 			isa = PBXGroup;
 			children = (
-				B2F3ED4E1C14F1E8003A41F9 /* EJSelectMenuExample */,
-				B2F3ED681C14F1E8003A41F9 /* EJSelectMenuExampleTests */,
-				B2F3ED731C14F1E8003A41F9 /* EJSelectMenuExampleUITests */,
+				B2F3ED4E1C14F1E8003A41F9 /* EEJSelectMenuExample */,
+				B2F3ED681C14F1E8003A41F9 /* EEJSelectMenuExampleTests */,
+				B2F3ED731C14F1E8003A41F9 /* EEJSelectMenuExampleUITests */,
 				B2F3ED4D1C14F1E8003A41F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,14 +97,14 @@
 		B2F3ED4D1C14F1E8003A41F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2F3ED4C1C14F1E8003A41F9 /* EJSelectMenuExample.app */,
-				B2F3ED651C14F1E8003A41F9 /* EJSelectMenuExampleTests.xctest */,
-				B2F3ED701C14F1E8003A41F9 /* EJSelectMenuExampleUITests.xctest */,
+				B2F3ED4C1C14F1E8003A41F9 /* EEJSelectMenuExample.app */,
+				B2F3ED651C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */,
+				B2F3ED701C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2F3ED4E1C14F1E8003A41F9 /* EJSelectMenuExample */ = {
+		B2F3ED4E1C14F1E8003A41F9 /* EEJSelectMenuExample */ = {
 			isa = PBXGroup;
 			children = (
 				B2F3ED521C14F1E8003A41F9 /* AppDelegate.h */,
@@ -116,12 +116,13 @@
 				B2F3ED5D1C14F1E8003A41F9 /* LaunchScreen.storyboard */,
 				B2F3ED601C14F1E8003A41F9 /* Info.plist */,
 				B2F3ED4F1C14F1E8003A41F9 /* Supporting Files */,
-				B2F3ED821C14F396003A41F9 /* EJMenuItem.h */,
-				B2F3ED831C14F396003A41F9 /* EJMenuItem.m */,
-				B2F3ED851C14F7E2003A41F9 /* EJSelectMenu.h */,
-				B2F3ED861C14F7E2003A41F9 /* EJSelectMenu.m */,
+				B2F3ED821C14F396003A41F9 /* EEJMenuItem.h */,
+				B2F3ED831C14F396003A41F9 /* EEJMenuItem.m */,
+				B2F3ED851C14F7E2003A41F9 /* EEJSelectMenu.h */,
+				B2F3ED861C14F7E2003A41F9 /* EEJSelectMenu.m */,
 			);
-			path = EJSelectMenuExample;
+			name = EEJSelectMenuExample;
+			path = EEJSelectMenuExample;
 			sourceTree = "<group>";
 		};
 		B2F3ED4F1C14F1E8003A41F9 /* Supporting Files */ = {
@@ -132,30 +133,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B2F3ED681C14F1E8003A41F9 /* EJSelectMenuExampleTests */ = {
+		B2F3ED681C14F1E8003A41F9 /* EEJSelectMenuExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2F3ED691C14F1E8003A41F9 /* EJSelectMenuExampleTests.m */,
+				B2F3ED691C14F1E8003A41F9 /* EEJSelectMenuExampleTests.m */,
 				B2F3ED6B1C14F1E8003A41F9 /* Info.plist */,
 			);
+			name = EEJSelectMenuExampleTests;
 			path = EJSelectMenuExampleTests;
 			sourceTree = "<group>";
 		};
-		B2F3ED731C14F1E8003A41F9 /* EJSelectMenuExampleUITests */ = {
+		B2F3ED731C14F1E8003A41F9 /* EEJSelectMenuExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B2F3ED741C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m */,
+				B2F3ED741C14F1E8003A41F9 /* EEJSelectMenuExampleUITests.m */,
 				B2F3ED761C14F1E8003A41F9 /* Info.plist */,
 			);
-			path = EJSelectMenuExampleUITests;
+			name = EEJSelectMenuExampleUITests;
+			path = EEJSelectMenuExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2F3ED4B1C14F1E8003A41F9 /* EJSelectMenuExample */ = {
+		B2F3ED4B1C14F1E8003A41F9 /* EEJSelectMenuExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2F3ED791C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExample" */;
+			buildConfigurationList = B2F3ED791C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExample" */;
 			buildPhases = (
 				B2F3ED481C14F1E8003A41F9 /* Sources */,
 				B2F3ED491C14F1E8003A41F9 /* Frameworks */,
@@ -165,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = EJSelectMenuExample;
-			productName = EJSelectMenuExample;
-			productReference = B2F3ED4C1C14F1E8003A41F9 /* EJSelectMenuExample.app */;
+			name = EEJSelectMenuExample;
+			productName = EEJSelectMenuExample;
+			productReference = B2F3ED4C1C14F1E8003A41F9 /* EEJSelectMenuExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B2F3ED641C14F1E8003A41F9 /* EJSelectMenuExampleTests */ = {
+		B2F3ED641C14F1E8003A41F9 /* EEJSelectMenuExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2F3ED7C1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExampleTests" */;
+			buildConfigurationList = B2F3ED7C1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExampleTests" */;
 			buildPhases = (
 				B2F3ED611C14F1E8003A41F9 /* Sources */,
 				B2F3ED621C14F1E8003A41F9 /* Frameworks */,
@@ -183,14 +186,14 @@
 			dependencies = (
 				B2F3ED671C14F1E8003A41F9 /* PBXTargetDependency */,
 			);
-			name = EJSelectMenuExampleTests;
-			productName = EJSelectMenuExampleTests;
-			productReference = B2F3ED651C14F1E8003A41F9 /* EJSelectMenuExampleTests.xctest */;
+			name = EEJSelectMenuExampleTests;
+			productName = EEJSelectMenuExampleTests;
+			productReference = B2F3ED651C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B2F3ED6F1C14F1E8003A41F9 /* EJSelectMenuExampleUITests */ = {
+		B2F3ED6F1C14F1E8003A41F9 /* EEJSelectMenuExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2F3ED7F1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExampleUITests" */;
+			buildConfigurationList = B2F3ED7F1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExampleUITests" */;
 			buildPhases = (
 				B2F3ED6C1C14F1E8003A41F9 /* Sources */,
 				B2F3ED6D1C14F1E8003A41F9 /* Frameworks */,
@@ -201,9 +204,9 @@
 			dependencies = (
 				B2F3ED721C14F1E8003A41F9 /* PBXTargetDependency */,
 			);
-			name = EJSelectMenuExampleUITests;
-			productName = EJSelectMenuExampleUITests;
-			productReference = B2F3ED701C14F1E8003A41F9 /* EJSelectMenuExampleUITests.xctest */;
+			name = EEJSelectMenuExampleUITests;
+			productName = EEJSelectMenuExampleUITests;
+			productReference = B2F3ED701C14F1E8003A41F9 /* EEJSelectMenuExample.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B2F3ED471C14F1E8003A41F9 /* Build configuration list for PBXProject "EJSelectMenuExample" */;
+			buildConfigurationList = B2F3ED471C14F1E8003A41F9 /* Build configuration list for PBXProject "EEJSelectMenuExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2F3ED4B1C14F1E8003A41F9 /* EJSelectMenuExample */,
-				B2F3ED641C14F1E8003A41F9 /* EJSelectMenuExampleTests */,
-				B2F3ED6F1C14F1E8003A41F9 /* EJSelectMenuExampleUITests */,
+				B2F3ED4B1C14F1E8003A41F9 /* EEJSelectMenuExample */,
+				B2F3ED641C14F1E8003A41F9 /* EEJSelectMenuExampleTests */,
+				B2F3ED6F1C14F1E8003A41F9 /* EEJSelectMenuExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,10 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F3ED571C14F1E8003A41F9 /* ViewController.m in Sources */,
-				B2F3ED841C14F396003A41F9 /* EJMenuItem.m in Sources */,
+				B2F3ED841C14F396003A41F9 /* EEJMenuItem.m in Sources */,
 				B2F3ED541C14F1E8003A41F9 /* AppDelegate.m in Sources */,
 				B2F3ED511C14F1E8003A41F9 /* main.m in Sources */,
-				B2F3ED871C14F7E2003A41F9 /* EJSelectMenu.m in Sources */,
+				B2F3ED871C14F7E2003A41F9 /* EEJSelectMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F3ED6A1C14F1E8003A41F9 /* EJSelectMenuExampleTests.m in Sources */,
+				B2F3ED6A1C14F1E8003A41F9 /* EEJSelectMenuExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F3ED751C14F1E8003A41F9 /* EJSelectMenuExampleUITests.m in Sources */,
+				B2F3ED751C14F1E8003A41F9 /* EEJSelectMenuExampleUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		B2F3ED671C14F1E8003A41F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B2F3ED4B1C14F1E8003A41F9 /* EJSelectMenuExample */;
+			target = B2F3ED4B1C14F1E8003A41F9 /* EEJSelectMenuExample */;
 			targetProxy = B2F3ED661C14F1E8003A41F9 /* PBXContainerItemProxy */;
 		};
 		B2F3ED721C14F1E8003A41F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B2F3ED4B1C14F1E8003A41F9 /* EJSelectMenuExample */;
+			target = B2F3ED4B1C14F1E8003A41F9 /* EEJSelectMenuExample */;
 			targetProxy = B2F3ED711C14F1E8003A41F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,24 +425,22 @@
 		B2F3ED7A1C14F1E8003A41F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EJSelectMenuExample/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExample;
+				PRODUCT_NAME = EEJSelectMenuExample;
 			};
 			name = Debug;
 		};
 		B2F3ED7B1C14F1E8003A41F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EJSelectMenuExample/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExample;
+				PRODUCT_NAME = EEJSelectMenuExample;
 			};
 			name = Release;
 		};
@@ -447,11 +448,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EJSelectMenuExampleTests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EJSelectMenuExample.app/EJSelectMenuExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleTests;
+				PRODUCT_NAME = EEJSelectMenuExample;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEJSelectMenuExample.app/EEJSelectMenuExample";
 			};
 			name = Debug;
 		};
@@ -459,22 +460,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EJSelectMenuExampleTests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EJSelectMenuExample.app/EJSelectMenuExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleTests;
+				PRODUCT_NAME = EEJSelectMenuExample;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEJSelectMenuExample.app/EEJSelectMenuExample";
 			};
 			name = Release;
 		};
 		B2F3ED801C14F1E8003A41F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EJSelectMenuExampleUITests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = EJSelectMenuExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleUITests;
+				PRODUCT_NAME = EEJSelectMenuExample;
+				TEST_TARGET_NAME = EEJSelectMenuExample;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -482,11 +483,11 @@
 		B2F3ED811C14F1E8003A41F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EJSelectMenuExampleUITests/Info.plist;
+				INFOPLIST_FILE = EEJSelectMenuExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EJSelectMenuExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = EJSelectMenuExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanJahromi.EEJSelectMenuExampleUITests;
+				PRODUCT_NAME = EEJSelectMenuExample;
+				TEST_TARGET_NAME = EEJSelectMenuExample;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -494,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2F3ED471C14F1E8003A41F9 /* Build configuration list for PBXProject "EJSelectMenuExample" */ = {
+		B2F3ED471C14F1E8003A41F9 /* Build configuration list for PBXProject "EEJSelectMenuExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2F3ED771C14F1E8003A41F9 /* Debug */,
@@ -503,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2F3ED791C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExample" */ = {
+		B2F3ED791C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2F3ED7A1C14F1E8003A41F9 /* Debug */,
@@ -512,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2F3ED7C1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExampleTests" */ = {
+		B2F3ED7C1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2F3ED7D1C14F1E8003A41F9 /* Debug */,
@@ -521,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2F3ED7F1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EJSelectMenuExampleUITests" */ = {
+		B2F3ED7F1C14F1E8003A41F9 /* Build configuration list for PBXNativeTarget "EEJSelectMenuExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2F3ED801C14F1E8003A41F9 /* Debug */,

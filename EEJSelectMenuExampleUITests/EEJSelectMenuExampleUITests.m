@@ -1,6 +1,6 @@
 //
-//  EJSelectMenuExampleUITests.m
-//  EJSelectMenuExampleUITests
+//  EEJSelectMenuExampleUITests.m
+//  EEJSelectMenuExampleUITests
 //
 //  Created by Ehsan on 12/6/15.
 //  Copyright © 2015 Ehsan Jahromi. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-@interface EJSelectMenuExampleUITests : XCTestCase
+@interface EEJSelectMenuExampleUITests : XCTestCase
 
 @end
 
