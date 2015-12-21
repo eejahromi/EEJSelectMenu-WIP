@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B2F3ED4B1C14F1E8003A41F9"
-               BuildableName = "EJSelectMenuExample.app"
-               BlueprintName = "EJSelectMenuExample"
-               ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+               BuildableName = "EEJSelectMenuExample.app"
+               BlueprintName = "EEJSelectMenuExample"
+               ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B2F3ED641C14F1E8003A41F9"
-               BuildableName = "EJSelectMenuExampleTests.xctest"
-               BlueprintName = "EJSelectMenuExampleTests"
-               ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+               BuildableName = "EEJSelectMenuExample.xctest"
+               BlueprintName = "EEJSelectMenuExampleTests"
+               ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B2F3ED6F1C14F1E8003A41F9"
-               BuildableName = "EJSelectMenuExampleUITests.xctest"
-               BlueprintName = "EJSelectMenuExampleUITests"
-               ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+               BuildableName = "EEJSelectMenuExample.xctest"
+               BlueprintName = "EEJSelectMenuExampleUITests"
+               ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2F3ED4B1C14F1E8003A41F9"
-            BuildableName = "EJSelectMenuExample.app"
-            BlueprintName = "EJSelectMenuExample"
-            ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+            BuildableName = "EEJSelectMenuExample.app"
+            BlueprintName = "EEJSelectMenuExample"
+            ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2F3ED4B1C14F1E8003A41F9"
-            BuildableName = "EJSelectMenuExample.app"
-            BlueprintName = "EJSelectMenuExample"
-            ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+            BuildableName = "EEJSelectMenuExample.app"
+            BlueprintName = "EEJSelectMenuExample"
+            ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2F3ED4B1C14F1E8003A41F9"
-            BuildableName = "EJSelectMenuExample.app"
-            BlueprintName = "EJSelectMenuExample"
-            ReferencedContainer = "container:EJSelectMenuExample.xcodeproj">
+            BuildableName = "EEJSelectMenuExample.app"
+            BlueprintName = "EEJSelectMenuExample"
+            ReferencedContainer = "container:EEJSelectMenuExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
