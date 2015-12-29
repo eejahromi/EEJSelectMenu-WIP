@@ -78,11 +78,11 @@ EEJSelectMenu provides two delegate methods
 
 ##### Other configurations:
 
-Change selected button color (default -> Purple)
+Change selected button color (default: Purple)
 ```objective-c
     menu.selectedButtonColor = [UIColor blueColor];
 ```
-Change menu background color (default -> White)
+Change menu background color (default: White)
 ```objective-c
     menu.menuBackgroundColor = [UIColor redColor];
 ```
