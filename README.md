@@ -1,6 +1,6 @@
 # EEJSelectMenu
 
-Beta testing. CocoaPod coming soon!
+Beta testing. First version of the CocoaPod is out.
 
 EEJSelectMenu is a responsive single selection menu for iOS.  
 Project allows for implementing a menu with different number of buttons and different animations for appearance.  
